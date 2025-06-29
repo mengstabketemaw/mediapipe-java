@@ -30,7 +30,7 @@ public class Main extends Application {
     private final Map<String, FlowPane> groupPanes = new HashMap<>();
 
 
-    public static void main(String[] args) throws Throwable {
+    public static void main(String[] args){
         launch(args);
     }
 

@@ -25,6 +25,6 @@ test {
 application {
     mainClass = 'dev.Main'
     applicationDefaultJvmArgs = [
-            "-Djava.library.path=/home/mengstab/Desktop/mediapipe/bazel-bin/mediapipe/examples/practice/6/lib6.so.runfiles/mediapipe/mediapipe/examples/practice/6"
+            "-Djava.library.path=./mediapipe"
     ]
 }
