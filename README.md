@@ -2,6 +2,8 @@
 
 This project demonstrates how to integrate MediaPipe with Java without relying on the Android SDK. The primary goal is to showcase the use of a pre-built MediaPipe shared library for face detection and recognition in a desktop Java application.
 
+![Sample Image](image.jpg)
+
 ## Project Overview
 
 The application is a simple face grouping tool. You can drag and drop images (or select them via a file chooser) onto the application window. The application will then:
@@ -42,7 +44,7 @@ This project includes a pre-built shared library for Linux (`lib6.so`) in the `m
 
 *   `build.gradle`: The Gradle build file, which defines the project's dependencies and configuration.
 *   `mediapipe/lib6.so`: The pre-built MediaPipe shared library for Linux.
-*   `mediapipe/model.onnx`: The ONNX model used for face recognition.
+*   `mediapipe/model.onnx`: The ONNX model used for face recognition. **Note:** This file is not included in the repository and must be downloaded separately.
 *   `src/main/java/dev/`: The Java source code for the application.
     *   `Main.java`: The main application entry point, which creates the UI and handles user interactions.
     *   `FaceRecognizer.java`: A class that encapsulates the logic for face detection and recognition, including the JNI calls to the MediaPipe library.
@@ -56,7 +58,11 @@ This project includes a pre-built shared library for Linux (`lib6.so`) in the `m
     *   Gradle
     *   (For non-Linux users) A compatible MediaPipe shared library for your operating system.
 
-2.  **Run the application:**
+2.  **Download the Model:**
+
+    Download the `model.onnx` file and place it in the `mediapipe` directory.
+
+3.  **Run the application:**
 
     ```bash
     ./gradlew run

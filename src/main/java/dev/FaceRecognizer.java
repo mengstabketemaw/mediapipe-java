@@ -32,7 +32,7 @@ public class FaceRecognizer {
 
     public Optional<String> detectAndClassify(byte[] imageBytes) {
         try {
-            String modelPath = "/home/mengstab/Desktop/mediapipe/mediapipe/examples/practice/6/model.onnx";
+            String modelPath = "mediapipe/model.onnx";
             float[] floats = embeddingExtractor.extractEmbedding(imageBytes, modelPath);
             String groupId = faces
                     .entrySet()
