@@ -1,9 +1,7 @@
 plugins {
-    id 'java'
     id 'application'
     id 'org.openjfx.javafxplugin' version '0.1.0'
 }
-
 group = 'dev'
 version = '1.0-SNAPSHOT'
 
@@ -23,4 +21,10 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+application {
+    mainClass = 'dev.Main'
+    applicationDefaultJvmArgs = [
+            "-Djava.library.path=/home/mengstab/Desktop/mediapipe/bazel-bin/mediapipe/examples/practice/6/lib6.so.runfiles/mediapipe/mediapipe/examples/practice/6"
+    ]
 }
