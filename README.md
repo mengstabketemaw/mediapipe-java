@@ -2,7 +2,7 @@
 
 This project demonstrates how to integrate MediaPipe with Java without relying on the Android SDK. The primary goal is to showcase the use of a pre-built MediaPipe shared library for face detection and recognition in a desktop Java application.
 
-![Sample Image](image.jpg)
+![Sample Image](Sample.png)
 
 ## Project Overview
 
